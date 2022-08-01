@@ -38,6 +38,8 @@
     <many-to-one name="tradingName" ref="com.axelor.apps.base.db.TradingName"/>
     <string name="opportunitySeq" title="Reference" readonly="true" unique="true"/>
 
+    <many-to-many name="opportunityTagSet" ref="OpportunityTag" title="Tags"/>
+
     <extra-code>
 		<![CDATA[
 		// Stage SELECT

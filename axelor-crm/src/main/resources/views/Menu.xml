@@ -9,6 +9,15 @@
   <menuitem name="crm-root-lead" parent="crm-root" title="Leads" action="crm.root.lead"
     order="1"/>
 
+  <menuitem name="opportunity-tags" parent="crm-conf" title="Tags"
+    action="opportunity.tags"/>
+
+  <action-view name="opportunity.tags" title="Tags"
+    model="com.axelor.apps.crm.db.OpportunityTag">
+    <view type="grid" name="opportunity-tag-grid"/>
+    <view type="form" name="opportunity-tag-form"/>
+  </action-view>
+
   <action-view name="crm.root.lead" title="Leads" model="com.axelor.apps.crm.db.Lead">
     <view type="grid" name="lead-grid"/>
     <view type="form" name="lead-form"/>
